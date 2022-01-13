@@ -11,6 +11,15 @@
   </head>
 
   <body>
+
+      <nav class="navbar navbar-light bg-light mb-3">
+        <a class="navbar-brand">Simple AirBnB</a>
+        <form class="form-inline">
+          <button class="btn btn-outline-primary my-2 my-sm-0 mr-3" type="submit"><%= link_to 'Home', flats_path %></button>
+          <button class="btn btn-outline-primary my-2 my-sm-0" type="submit"><%= link_to 'Add a Flat', new_flat_path %></button>
+        </form>
+      </nav>
+
     <%= yield %>
   </body>
 </html>
